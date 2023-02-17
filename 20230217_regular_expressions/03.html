@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 정규식 플래그
+        // 정규식 플래그는 정규식을 생성할 때 고급 검색을 위한 전역 옵션을 설정할 수 있도록 지원하는 기능이다.
+
+        // const flags = 'i'
+        // const regex1 = new RegExp('abcloudstonecd', flags)
+        // const regex2 = /cloudstone/i
+        // const regex3 = /cloudstone/gm
+
+
+        const str1 = 'abcdabcdefgabc'
+        console.log(str1.match(/ab/))
+        console.log(str1.match(/ab/g))
+
+        const str2 = 'hello woldo\nannyeong changpo sword\nannyeong ojukjang\nannyeong DaehanHMD'
+        console.log(str2)
+
+        console.log('hello')
+        console.log(str2.match(/hello/))
+        console.log(str2.match(/^hello/)) // 문자열 시작에 hello 가 있어서 배열로 출력됨
+        console.log('')
+        console.log('woldo')
+        console.log(str2.match(/woldo/))
+        console.log(str2.match(/^woldo/)) // 문자열 시작에 woldo 가 있는 게 아니라서, null 출력됨
+        console.log('')
+        console.log('annyeong')
+        console.log(str2.match(/annyeong/))
+        console.log(str2.match(/^annyeong/)) // 문자열 시작에 annyeong 이 있는 게 아니라서, null 출력됨.
+        console.log(str2.match(/^annyeong/m)) // 문자열 시작에 있는 건 아니지만, 다음 줄의 시작에 있는 것도 ㅇㅈ?
+        console.log(str2.match(/^annyeong/gm)) // 한 줄의 시작에 있는 여러 개 출력
+
+    </script>
+</body>
+</html>

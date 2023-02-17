@@ -20,6 +20,37 @@
         const re2 = /[a-d]/
         console.log(test1.match(re1))
         console.log(test1.match(re2))
+
+        const regex1 = /\d{3}-\d{4}-\d{4}/
+        console.log(regex1.test('010-1234-1234'))
+        console.log(regex1.test('019-111-2222'))
+
+        // 정규식 플래그?
+
+        // ("문자열").match(/정규표현식/플래그)
+        // "문자열"에서 "정규표현식"에 매칭되는 항목들을 배열로 반환
+        
+        // ("문자열").replace(/정규표현식/, "대체문자열")
+        // "정규표현식"에 매칭되는 항목을 "대체문자열"로 변환
+
+        // ("문자열").split(정규표현식)
+        // "문자열"을 "정규표현식"에 매칭되는 항목으로 쪼개어 배열로 반환
+
+        // (정규표현식).test("문자열")
+        // "문자열"이 "정규표현식"과 매칭되면 true, 아니면 false반환
+
+        // (정규표현식).exec("문자열")
+        // match메서드와 유사(단, 무조건 첫번째 매칭 결과만 반환)
+
+        const regex2 = /apple/
+        const txt = 'hello samsung hello apple shut up lg'
+        console.log(txt)
+        console.log(regex2.test(txt))
+        console.log(txt.match(regex2))
+        console.log(txt.replace(regex2, 'microsoft'))
+
+
+
         
     </script>
 </body>
