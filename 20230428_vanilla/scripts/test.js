@@ -1,5 +1,9 @@
-const myObj = {
-    name: 'deon'
-}
+const name = 'deon'
 
-module.exports = myObj
+export default {
+    name,
+    myObj: {
+        color: 'blueviolet',
+        height: 158
+    }
+}

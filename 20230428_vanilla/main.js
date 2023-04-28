@@ -1,3 +1,3 @@
-const importedObj = require('./scripts/test')
+import imported from './scripts/test.js'
 
-console.log(myObj)
+console.log(imported)
