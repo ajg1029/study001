@@ -1,3 +1,3 @@
-import myObj from "./scripts/test.js"
+const importedObj = require('./scripts/test')
 
 console.log(myObj)
